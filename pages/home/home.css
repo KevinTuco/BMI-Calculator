@@ -6,6 +6,7 @@ h2,p{
   color: rgb(6, 60, 140);
   text-align: center;
 }
+
 button{
     background: none;
     color: #60faff;
@@ -20,4 +21,8 @@ button:hover{
     box-shadow: 0 0.5em 0.5em -0.4rem  #27f2ee;
     transform: translateY(-0.25em);
     cursor: pointer;
+}
+img,button{
+  display: block;
+  margin: 25px auto;
 }
