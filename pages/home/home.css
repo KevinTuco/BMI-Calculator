@@ -6,7 +6,9 @@ h2,p{
   color: rgb(6, 60, 140);
   text-align: center;
 }
-
+ion-input{
+  color: rgb(6, 60, 140);
+}
 button{
     background: none;
     color: #60faff;
