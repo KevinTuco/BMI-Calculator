@@ -1,0 +1,10 @@
+ion-content{
+  background: #1a2a6c;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to top, #fdbb2d, #b21f1f, #1a2a6c);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to top, #fdbb2d, #b21f1f, #1a2a6c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+font-family: 'Roboto Slab', serif;
+}
+h2{
+  color: rgb(6, 136, 6);
+  text-align: center;
+}
