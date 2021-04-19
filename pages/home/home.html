@@ -13,6 +13,7 @@
     on how tall you are. It gives you a clue to your risk for weight-related health problems.<br/><br/> Source: <a
       href="https://www.webmd.com">https://www.webmd.com</a>
   </p>
+  <img src="https://stackblitz.com/files/ionic-awf8dy/github/KevinTuco/BMI-Calculator/master/pages/home/logo.png" alt="">
   <ion-item>
     <ion-label>Height in meters</ion-label>
     <ion-input type="number" [(ngModel)]="height" required></ion-input>
@@ -21,7 +22,7 @@
     <ion-label>Weight in kilograms</ion-label>
     <ion-input type="number" [(ngModel)]="weight" required></ion-input>
   </ion-item>
-  <button ion-button color="secondary" (click)="calculateBMI()">Submit</button>
+  <button ion-button (click)="calculateBMI()">Submit</button>
 
   <ion-item *ngIf="bmi">
     <h2>Your BMI is: {{bmi}} <code> ({{bmiMessage}}) </code> </h2>
