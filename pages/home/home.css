@@ -28,3 +28,6 @@ img,button{
   display: block;
   margin: 25px auto;
 }
+ion-item{
+  background-color: rgb(109, 245, 186);
+}
