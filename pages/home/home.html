@@ -15,11 +15,11 @@
   </p>
   <img src="https://stackblitz.com/files/ionic-awf8dy/github/KevinTuco/BMI-Calculator/master/pages/home/logo.png" alt="">
   <ion-item>
-    <ion-label>Height in meters</ion-label>
+    <ion-label id="label">Height in meters</ion-label>
     <ion-input type="number" [(ngModel)]="height" required></ion-input>
   </ion-item>
   <ion-item>
-    <ion-label>Weight in kilograms</ion-label>
+    <ion-label id="label">Weight in kilograms</ion-label>
     <ion-input type="number" [(ngModel)]="weight" required></ion-input>
   </ion-item>
   <button ion-button (click)="calculateBMI()">Submit</button>

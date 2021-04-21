@@ -31,3 +31,6 @@ img,button{
 ion-item{
   background-color: rgb(109, 245, 186);
 }
+#label{
+  color: rgb(0, 38, 255);
+}
