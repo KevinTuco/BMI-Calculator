@@ -11,7 +11,7 @@ export class HomePage {
   minionDam: number;
   AC: number;
   hordeHit: number;
-  bmiMessage: string;
+  fightResult: string;
 
   minionHorde() {
     this.bmi = this.weight / (this.height * this.height);
