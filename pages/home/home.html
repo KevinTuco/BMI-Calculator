@@ -14,19 +14,19 @@
   
   <ion-item>
     <ion-label id="label">Number of Minions</ion-label>
-    <ion-input type="number" [(ngModel)]="height" required></ion-input>
+    <ion-input type="number" [(ngModel)]="numMinion" required></ion-input>
   </ion-item>
   <ion-item>
   <ion-label id="label">Armor Class</ion-label>
-  <ion-input type="number" [(ngModel)]="height" required></ion-input>
+  <ion-input type="number" [(ngModel)]="AC" required></ion-input>
 </ion-item>
   <ion-item>
     <ion-label id="label">Damage Rolls</ion-label>
-    <ion-input type="number" [(ngModel)]="weight" required></ion-input>
+    <ion-input type="number" [(ngModel)]="minionDam" required></ion-input>
   </ion-item>
-  <button ion-button (click)="calculateBMI()">FIGHT!</button>
+  <button ion-button (click)="minionHorde()">FIGHT!</button>
 
-  <ion-item *ngIf="bmi">
-    <h2>Your BMI is: {{bmi}} <code> ({{bmiMessage}}) </code> </h2>
+  <ion-item *ngIf="hordeHit">
+    <h2>{{hordeHit}} Minions have hit the target <code> ({{bmiMessage}}) </code> </h2>
   </ion-item>
 </ion-content>
