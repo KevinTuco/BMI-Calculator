@@ -7,22 +7,24 @@
 </ion-header>
 
 <ion-content padding>
-  <h2>Body Mass Index Calculator</h2>
+  <h2>Minion Wave Simulator</h2>
   <p>
-    There's no "perfect weight" that fits everyone. BMI, or body mass index, measures how healthy your weight is based
-    on how tall you are. It gives you a clue to your risk for weight-related health problems.<br/><br/> Source: <a
-      href="https://www.webmd.com">https://www.webmd.com</a>
+    A program that can simulate a horde of minions; so you don't need to roll so many dice and do some simple addition. Let the code do it for you you lazy bum =).
   </p>
-  <img src="https://stackblitz.com/files/ionic-awf8dy/github/KevinTuco/BMI-Calculator/master/pages/home/logo.png" alt="">
+  
   <ion-item>
-    <ion-label id="label">Height in meters</ion-label>
+    <ion-label id="label">Number of Minions</ion-label>
     <ion-input type="number" [(ngModel)]="height" required></ion-input>
   </ion-item>
   <ion-item>
-    <ion-label id="label">Weight in kilograms</ion-label>
+  <ion-label id="label">Armor Class</ion-label>
+  <ion-input type="number" [(ngModel)]="height" required></ion-input>
+</ion-item>
+  <ion-item>
+    <ion-label id="label">Damage Rolls</ion-label>
     <ion-input type="number" [(ngModel)]="weight" required></ion-input>
   </ion-item>
-  <button ion-button (click)="calculateBMI()">Submit</button>
+  <button ion-button (click)="calculateBMI()">FIGHT!</button>
 
   <ion-item *ngIf="bmi">
     <h2>Your BMI is: {{bmi}} <code> ({{bmiMessage}}) </code> </h2>
