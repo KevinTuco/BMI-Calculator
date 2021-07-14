@@ -16,25 +16,27 @@ export class HomePage {
   minionDice: number;
   minionDNum: number;
   showNum: number;
-  showRoll: number;
+  dNum: number;
+  Nmin: number;
 
   minionHorde() {
         this.minionDam = 0;
         this.showNum = this.numMinion;
         this.hordeHit = this.numMinion;
-        this.showRoll = this.minionDNum;
-        while(this.numMinion > 0){
+        this.Nmin = this.numMinion;
+        while(this.Nmin > 0){
           this.roll = Math.floor(Math.random() * 20) + 1;
           if (this.roll == this.AC || this.roll > this.AC){
-            while(this.minionDNum > 0){
+            this.dNum = this.minionDNum;
+            while(this.dNum > 0){
               this.rollTemp = Math.floor(Math.random() * this.minionDice) + 1;
               this.minionDam += this.rollTemp;
-              this.minionDNum --;
+              this.dNum --;
             }
           }else if(this.roll < this.AC){
             this.hordeHit --;
           }
-          this.numMinion--;
+          this.Nmin--;
         }
   }
   
