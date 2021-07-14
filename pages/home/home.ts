@@ -20,8 +20,8 @@ export class HomePage {
 
   minionHorde() {
         this.minionDam = 0;
-        this.hordeHit = this.numMinion;
         this.showNum = this.numMinion;
+        this.hordeHit = this.numMinion;
         this.showRoll = this.minionDNum;
         while(this.numMinion > 0){
           this.roll = Math.floor(Math.random() * 20) + 1;
