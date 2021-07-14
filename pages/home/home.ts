@@ -15,10 +15,14 @@ export class HomePage {
   hordeHit: number;
   minionDice: number;
   minionDNum: number;
+  showNum: number;
+  showRoll: number;
 
   minionHorde() {
         this.minionDam = 0;
         this.hordeHit = this.numMinion;
+        this.showNum = this.numMinion;
+        this.showRoll = this.minionDNum;
         while(this.numMinion > 0){
           this.roll = Math.floor(Math.random() * 20) + 1;
           if (this.roll == this.AC || this.roll > this.AC){
