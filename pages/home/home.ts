@@ -32,7 +32,9 @@ export class HomePage {
           }else if(this.roll < this.AC){
             this.hordeHit --;
           }
+          this.numMinion--;
         }
+        return this.fightResult = ""
   }
   
   constructor(public navCtrl: NavController) {
