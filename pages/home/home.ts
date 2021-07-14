@@ -13,8 +13,6 @@ export class HomePage {
   rollTemp: number;
   roll: number;
   hordeHit: number;
-  battleType: string;
-  fightResult: string;
   minionDice: number;
   minionDNum: number;
 
@@ -34,7 +32,6 @@ export class HomePage {
           }
           this.numMinion--;
         }
-        return this.fightResult = ""
   }
   
   constructor(public navCtrl: NavController) {
