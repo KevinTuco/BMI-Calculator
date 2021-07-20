@@ -19,6 +19,7 @@ export class HomePage {
   dNum: number;
   Nmin: number;
 
+
   minionHorde() {
         this.minionDam = 0;
         this.showNum = this.numMinion;
