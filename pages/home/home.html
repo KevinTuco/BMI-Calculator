@@ -18,8 +18,12 @@
     <ion-input type="number" [(ngModel)]="numMinion" required></ion-input>
   </ion-item>
   <ion-item>
-    <ion-label id="label">Armor Class</ion-label>
+    <ion-label id="label">Armor Class (Of target)</ion-label>
     <ion-input type="number" [(ngModel)]="AC" required></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label id="label">+ To Hit (If none then 0)</ion-label>
+    <ion-input type="number" [(ngModel)]="atkBonus" required></ion-input>
   </ion-item>
   <ion-item>
     <ion-label id="label">Damage Rolls (Dice)</ion-label>
@@ -29,6 +33,7 @@
     <ion-label id="label">Damage Rolls (Amount)</ion-label>
     <ion-input type="number" [(ngModel)]="minionDNum" required></ion-input>
   </ion-item>
+  
   
   <button ion-button (click)="minionHorde()">FIGHT!</button>
 

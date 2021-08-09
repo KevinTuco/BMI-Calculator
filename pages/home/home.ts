@@ -18,6 +18,7 @@ export class HomePage {
   showNum: number;
   dNum: number;
   Nmin: number;
+  atkBonus: number;
 
 
   minionHorde() {
@@ -27,7 +28,7 @@ export class HomePage {
         this.Nmin = this.numMinion;
         while(this.Nmin > 0){
           this.roll = Math.floor(Math.random() * 20) + 1;
-          if (this.roll == this.AC || this.roll > this.AC){
+          if (this.roll == (this.AC+this.atkBonus) || this.roll > (this.AC+this.atkBonus)){
             this.dNum = this.minionDNum;
             while(this.dNum > 0){
               this.rollTemp = Math.floor(Math.random() * this.minionDice) + 1;
